@@ -161,7 +161,7 @@ namespace big
 		if (g.spoofing.multiplex_session)
 		{
 			ImGui::SameLine();
-			ImGui::SliderInt("###multiplex_cnt", &g.spoofing.multiplex_count, 2, 5);
+			ImGui::SliderInt("###multiplex_cnt", &g.spoofing.multiplex_count, 2, 500);
 		}
 		components::command_checkbox<"32players">();
 
