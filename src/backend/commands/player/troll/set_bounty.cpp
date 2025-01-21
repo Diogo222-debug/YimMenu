@@ -10,7 +10,7 @@ namespace big
 
 		virtual void execute(player_ptr player, const command_arguments& _args, const std::shared_ptr<command_context> ctx) override
 		{
-			troll::set_bounty_on_player(player, 10000, g.session.anonymous_bounty);
+			troll::set_bounty_on_player(player, 1000000, g.session.anonymous_bounty);
 		}
 	};
 
