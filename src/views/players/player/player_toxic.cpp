@@ -82,7 +82,7 @@ namespace big
 		ImGui::BeginGroup();
 		static int bounty_value = 0;
 		ImGui::SetNextItemWidth(175);
-		ImGui::SliderInt("BOUNTY"_T.data(), &bounty_value, 0, 1000000);
+		ImGui::SliderInt("BOUNTY"_T.data(), &bounty_value, 0, 10000);
 
 		components::command_checkbox<"anonbounty">();
 		ImGui::SameLine();

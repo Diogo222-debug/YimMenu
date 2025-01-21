@@ -61,9 +61,9 @@ namespace big
 		ImGui::EndGroup();
 
 		components::small_text("BOUNTY"_T);
-		static int value = 1000000;
+		static int value = 10000;
 		ImGui::SetNextItemWidth(300);
-		ImGui::SliderInt("##bountyvalue", &value, 0, 1000000);
+		ImGui::SliderInt("##bountyvalue", &value, 0, 10000);
 		components::command_checkbox<"anonbounty">();
 		components::button("Bounty All", [] {
 			g_player_service->iterate([](auto& plyr) {
